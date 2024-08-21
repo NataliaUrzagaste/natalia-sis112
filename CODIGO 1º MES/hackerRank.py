@@ -1,3 +1,6 @@
+#ejercicio uno
+print("Hello, World")
+
 # condicionales
 #!/bin/python3
 
