@@ -40,3 +40,11 @@ if __name__ == '__main__':
     div2= a/b
     print(div)
     print(div2)
+
+#loop
+if __name__ == '__main__':
+    n = int(input())
+    for i in range(n):
+        if i<n:
+            
+           print(i*i)
