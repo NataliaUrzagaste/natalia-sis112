@@ -9,20 +9,23 @@
 
 #codigo con matrices para sacar promedio 
 # dimens de la matris
-filas = int(input("ingresa el número de filas "))
-columnas = int(input("ingresa el número de columnas "))
+# Ingresar el número de estudiantes y el número de notas por estudiante
+num_estudiantes = int(input("Ingrese el número de estudiantes: "))
+num_notas = int(input("Ingrese el número de notas por estudiante: "))
 
-elementos = [] #lista para los elementos
-i=0
-j=0
-print("ingresa los elementos de la matriz")
-for i in range(filas):
-    for j in range(columnas):
-        valor = float(input(f"Elemento en la posición [{i}, {j}]: ")) #f para mesclar texto y numeros en {}
-        elementos.append(valor)
+# Inicializar la matriz de notas vacía
+matriz_notas = []
 
-suma_total = sum(elementos) #suma todoslos elementos
-total_elementos = len(elementos) #cuenta todos los elemnetos
-promedio = suma_total / total_elementos
-#  promedio
-print("El promedio de los elementos de la matriz es:", promedio)
+# Ingresar las notas de los estudiantes
+for i in range(num_estudiantes):
+    print(f"\nIngrese las notas del estudiante {i+1}:")
+    notas = []
+    for j in range(num_notas):
+        nota = float(input(f"Nota {j+1}: "))
+        notas.append(nota)
+    matriz_notas.append(notas)
+
+# Calcular y mostrar el promedio de cada estudiante
+for i in range(num_estudiantes):
+    promedio = sum(matriz_notas[i]) / num_notas
+    print(f"El promedio del estudiante {i+1} es: {promedio:.2f}")
