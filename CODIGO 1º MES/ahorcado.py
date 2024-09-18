@@ -1,7 +1,7 @@
 import random
 
 # Lista de palabras
-palabras = ["chisme", "monaco", "bromita", "ya no quiero", "webos"]
+palabras = ["chisme", "monaco", "bromita", "quiero", "nachos"]
 
 # escoje una palabra
 palabra_secreta = random.choice(palabras)
