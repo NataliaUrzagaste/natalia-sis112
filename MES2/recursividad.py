@@ -9,5 +9,4 @@ def aleatorio ():
         lista.append(num)
     print(lista)
     print(len(lista))
-
 aleatorio()
