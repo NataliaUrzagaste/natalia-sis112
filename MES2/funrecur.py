@@ -2,8 +2,9 @@ import random      #se importa la libreria random
 def geneList(lista_datos,rango,Vmin,Vmax):
     for i in range(rango):
         dato=random.randint(Vmin,Vmax)
+        if dato not in lista_datos:
+            lista_datos.append(dato)
         print(dato)
-        lista_datos.append(dato)    
     return lista_datos
 
 def encontrarNumero(lista,numero):
