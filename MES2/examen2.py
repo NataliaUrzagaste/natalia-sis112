@@ -33,7 +33,7 @@ while True:
                 print("el numero no se encuentra en la lista")
             else:
                 print(elimina)
-                print("se imprimio la lista generada por el usuario")
+                print("se imprimio la lista generada aleatoriamente")
         else:
             print("Opción de lista no válida.")   
 
@@ -41,12 +41,18 @@ while True:
         lista_opcion = int(input("¿En cuál lista deseas buscar? (1 = teclado, 2 = aleatoria): ")) 
         if lista_opcion == 1 and lista_teclado == exa.burbuja(lista_teclado):  
             cambia = exa.binaria(lista_teclado)  
-            print(cambia)
-            print("se immprimio la lista generada por el usuario")
+            if cambia == -1:
+                print("el numero no se encuentra en la lista")
+            else:
+                print(elimina)
+                print("se imprimio la lista generada por el usuario")
         elif lista_opcion == 2 and lista_aleatoria == exa.burbuja(lista_aleatoria): 
             cambia = exa.binaria(lista_aleatoria)  
-            print(cambia)
-            print("se imprimio la lista generada aleatoriamente")
+            if cambia == -1:
+                print("el numero no se encuentra en la lista")
+            else:
+                print(elimina)
+                print("se imprimio la lista generada aleatoriamente")
         else:
          print("opcion no valida")  
 
